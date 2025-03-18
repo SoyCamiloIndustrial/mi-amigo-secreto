@@ -1,0 +1,36 @@
+/* Corregir el color del texto en el botón modal para mejor visibilidad */
+.modal-button {
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    color: white; /* Cambiado de rgb(96, 96, 238) a blanco para mejor visibilidad */
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s; /* Agregado para consistencia */
+}
+
+/* Asegurarse de que .hidden realmente oculte elementos */
+.hidden {
+    display: none !important; /* Agregado !important para asegurar que tenga prioridad */
+}
+
+/* Estilos específicos para el botón Cerrar */
+button#cerrar, 
+.cerrar-button, 
+button[type="button"].modal-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Añadir hover a todos los botones modales para consistencia */
+.modal-button:hover, 
+button#cerrar:hover, 
+.cerrar-button:hover {
+    background-color: #c48b15;
+}
